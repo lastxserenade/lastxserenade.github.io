@@ -1,0 +1,96 @@
+  .section0 .itemsContainer > .card > .cardBox {
+	margin-left: 0 !important;
+	margin-right: 0em !important;
+}
+    
+    .section0  .itemsContainer, .vertical-list {
+	display: -webkit-flex;
+	display: inline-grid;
+	gap: 12px;
+	grid-template-columns: repeat(5, 1fr);
+}
+    
+
+    
+    .cardBox:not(.visualCardBox) .cardPadder {
+	background-color: #0000;
+	border-radius: 0em;
+
+}
+    .blurhash-canvas {
+	border-radius: 0em;
+}
+    [data-isfolder="true"] .cardImageContainer{
+clip-path: polygon(0% 0%, 100% 0%, 100% 30px, calc(100% - 30px) 30px, calc(100% - 30px) 0, calc(100% - 40px) 0, calc(100% - 40px) 40px, 100% 40px, 100% 100%, 0% 100%);
+    
+    }
+
+
+    .cardContent {
+	border: 0 !important;
+	border-radius: 0em;
+	bottom: 0;
+	color: inherit;
+	cursor: pointer;
+	display: block;
+	font-family: inherit;
+	font-size: inherit;
+	height: 100%;
+	left: 0;
+	margin: 0 !important;
+	overflow: hidden;
+	padding: 0 !important;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	contain: strict;
+	outline: none !important;
+}
+    
+    .countIndicator, .fullSyncIndicator, .mediaSourceIndicator {
+	background: #b127de; 
+        width:32px;
+        height:32px;
+        min-width:32px;
+        min-height:32px;
+        margin:0px!important;
+        top:0px!important;border-radius:unset;
+    
+}
+   [data-isfolder="false"]  .material-icons.check,
+    [data-isfolder="false"] .material-icons.check::before {
+	content: "watched";
+        font-family:"Noto Sans";
+        z-index:9;
+}
+    [data-isfolder="false"] .playedIndicator {
+	background: #b127de; 
+        height:32px;
+        width:100%;
+        margin:0px!important;
+        top:0px!important;
+        position:absolute;
+        box-shadow:unset;
+        border-radius:unset;
+        left:0px;
+    }
+        [data-isfolder="false"] .cardIndicators{
+        background: #00dc6e; 
+    top:0;
+ left:0px;
+            width:100%;
+    }
+        [data-isfolder="true"] .cardIndicators {
+	background: #b127de; 
+        height:32px;
+        margin:0px!important;
+        top:0px!important;
+        position:absolute;
+        box-shadow:unset;
+        border-radius:unset;
+        left:calc(100% - 32px);
+    }
+
+}
